@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/87203807ea.js" crossorigin="anonymous"></script>
+    <title>Головна сторінка</title>
+</head>
+<body>
+    <script src="snowfall.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(document).snowfall({image :"img/snow1.png", minSize: 10, maxSize:20});
+            $(document).snowfall({image :"img/snow2.png", minSize: 10, maxSize:20});
+            $(document).snowfall({image :"img/snow3.png", minSize: 10, maxSize:20});
+        });
+    </script>
+    <header>
+        <div class="container">
+            <h1>Комп'ютерна Галактика</h1>
+            <nav>
+                <ul class="horizontal-menu">
+                    <li><a href="index.html">Головна</a></li>
+                    <li>
+                        <a href="">Товари</a>
+                        <ul>
+                            <li><a href="processor.html">Процесори</a></li>
+                            <li><a href="videocard.html">Відеокарти</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="pronas.html">Про нас</a></li>
+                    <li>
+                        <a href="#">Покупцям</a>
+                        <ul>
+                            <li><a href="oplata.html">Оплата</a></li>
+                            <li><a href="garantia.html">Гарантія</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="main-content">
+        <div class="container">
+            <h1>Ласкаво просимо на головну сторінку інтернет-магазину!</h1>
+            <p>Інтернет-магазин - це ваш помічник і порадник у виборі комп'ютерної техніки. Команда магазину - це комп'ютерні гіки: ми всерйоз захоплені сучасними гаджетами і технологіями і хочемо, щоб вони були доступні кожному. Ми не просто продаємо товар, а допомагаємо кожній людині придбати або отримати те, що їй насправді необхідно.</p>
+    
+            <div class="gallery gallery-home" id="product1">
+                <img class="product-image active" src="1.jpg" alt="Фото 1" width="1000">
+                <img class="product-image" src="2.jpg" alt="Фото 2" width="1000">
+                <img class="product-image" src="3.jpg" alt="Фото 3" width="1000">
+                <img class="product-image" src="4.jpg" alt="Фото 4" width="1000">
+                <img class="product-image" src="5.jpg" alt="Фото 5" width="1000">
+                <button class="prev" onclick="changeImage('product1', -1)">&#10094;</button>
+                <button class="next" onclick="changeImage('product1', 1)">&#10095;</button>
+            </div>
+            
+            
+        </div>
+    </section>
+    
+
+    
+
+    <footer>
+        <div class="container">
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com/telemartua/" target="_blank"><i class="fab fa-facebook-square"></i></i></a></li>
+                <li><a href="https://www.instagram.com/telemart.ua/" target="_blank"><i class="fab fa-instagram"></i></a></i></li>
+                <li><a href="https://www.youtube.com/@telemart-980" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

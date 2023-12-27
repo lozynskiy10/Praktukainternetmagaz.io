@@ -1,0 +1,311 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+header {
+    background-image: url(img/Snow.svg);
+    color: white;
+    padding: 1.2em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.horizontal-menu {
+    background-image: url(img/Snow.svg);
+    list-style-type: none;
+    margin: 0;
+    padding: 0 8%;
+    display: flex;
+    
+}
+
+.horizontal-menu li {
+    background-image: url(img/Snow.svg);
+    margin-right: 20px;
+    text-align: left;
+}
+
+.horizontal-menu a {
+    background-image: url(img/Snow.svg);
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-size: 1.2em;
+
+}
+
+.horizontal-menu a:hover {
+    background-image: url(img/Snow.svg);
+    color: #ffcc00;
+
+}
+
+.horizontal-menu li ul li {
+    margin-bottom: 12px; 
+}
+
+.horizontal-menu a,
+.horizontal-menu ul li a,
+.main-content p {
+    font-size: 1.2em;
+    text-align: left;
+}
+
+
+.main-content {
+    padding: 50px 0;
+    background-color: #f5f5f5;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.main-content h1 {
+    color: #333;
+    font-size: 20px;
+}
+
+.main-content h4 {
+    color: #333;
+    font-size: 22px;
+}
+.main-content p {
+    color: #333;
+    font-size: 20px;
+}
+
+
+footer {
+    background-image: url(img/Snow.svg);
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 -5px 10px #000; 
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+.social-links li {
+    margin-right: 18px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.7em;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ffcc00;
+}
+
+
+.horizontal-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.horizontal-menu li:hover > ul {
+    display: block;
+}
+
+.horizontal-menu ul {
+    display: none;
+    position: absolute;
+    background-image: url(img/Snow.svg);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.horizontal-menu ul li {
+    display: block;
+    text-align: left;
+
+}
+
+.map-container {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.map-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+ul {
+    font-size: 1em; 
+}
+
+.photo-slider {
+    text-align: center;
+    margin-top: 18px;
+}
+
+#sliderImage {
+    width: 100%; 
+    max-height: 400px; 
+    object-fit: cover;
+}
+
+button {
+    padding: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+
+.gallery {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+.gallery-image {
+    display: none;
+}
+
+.gallery-image.active {
+    display: block;
+}
+
+.scroll-arrow {
+    position: absolute;
+    top: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-card {
+    width: 280px;
+    margin: 18px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.product-image {
+    height: 280px;
+    max-width: 100%;
+    object-fit: cover;
+
+}
+
+.product-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+.product-price {
+    color: #000;
+    font-weight: bold;
+}
+
+
+.gallery {
+    position: relative;
+}
+
+.gallery img {
+    display: none;
+}
+
+.gallery img.active {
+    display: block;
+}
+
+.gallery button.prev,
+.gallery button.next {
+    top: 50%;
+    font-size: 18px;
+    padding: 8px;
+    border: none;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.gallery button.prev {
+    left: 2%; 
+}
+
+.gallery button.next {
+    right: 2%; 
+}
+
+
+dl {
+    margin-top: 0;
+    margin-bottom: 20px; 
+}
+
+dd {
+    font-size: 20px; 
+    margin-bottom: 8px; 
+}
+dt {
+    font-size: 20px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.gallery-home .product-image {
+    width: 1000px;
+    height: auto;
+    object-fit: cover;
+}
+
+

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/87203807ea.js" crossorigin="anonymous"></script>
+    <title>Відеокарти</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Комп'ютерна Галактика</h1>
+            <nav>
+                <ul class="horizontal-menu">
+                    <li><a href="index.html">Головна</a></li>
+                    <li>
+                        <a href="">Товари</a>
+                        <ul>
+                            <li><a href="processor.html">Процесори</a></li>
+                            <li><a href="videocard.html">Відеокарти</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="pronas.html">Про нас</a></li>
+                    <li>
+                        <a href="#">Покупцям</a>
+                        <ul>
+                            <li><a href="oplata.html">Оплата</a></li>
+                            <li><a href="garantia.html">Гарантія</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <script src="snowfall.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(document).snowfall({image :"img/snow1.png", minSize: 10, maxSize:20});
+            $(document).snowfall({image :"img/snow2.png", minSize: 10, maxSize:20});
+            $(document).snowfall({image :"img/snow3.png", minSize: 10, maxSize:20});
+        });
+    </script>
+
+    <section class="main-content">
+        <div class="container">
+            <h1>Відеокарти</h1>
+
+            <div class="product-container">
+                <div class="product-card">
+                    <div class="gallery" id="product1">
+                        <img class="product-image active" src="card1_1.png"  alt="Відеокарта 1 - Фото 1">
+                        <img class="product-image" src="card1_2.png"  alt="Відеокарта 1 - Фото 2">
+                        <button class="prev" onclick="changeImage('product1', -1)">&#10094;</button>
+                        <button class="next" onclick="changeImage('product1', 1)">&#10095;</button>
+                    </div>
+                    <a href="card1.html">
+                        <div class="product-title">Відеокарта MSI GeForce RTX 4060 VENTUS 2X BLACK OC 8192MB (RTX 4060 VENTUS 2X BLACK 8G OC)</div>
+                    </a>
+                    <div class="product-description">
+                        Обсяг пам'яті: 8192 Мб<br>
+                        Тип пам'яті: GDDR6<br>
+                        Шина пам'яті: 128 біт<br>
+                        Частота відеопам'яті: 17000 МГц<br>
+                        Роз'єми для монітора:
+                        <ul>
+                            <li>1 x HDMI 2.1a</li>
+                            <li>3 x DisplayPort 1.4a</li>
+                        </ul>
+                        Продуктивність: 20139<br>
+                        Статус відеокарти: Нова
+                    </div>
+                    <div class="product-price">
+                        <h4>13899 ГРН</h4>
+                        </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="gallery" id="product2">
+                        <img class="product-image active" src="card2_1.png" alt="Відеокарта 2 - Фото 1">
+                        <img class="product-image" src="card2_2.jpg" alt="Відеокарта 2 - Фото 2" >
+                        <button class="prev" onclick="changeImage('product2', -1)">&#10094;</button>
+                        <button class="next" onclick="changeImage('product2', 1)">&#10095;</button>
+                    </div>
+                    <a href="card2.html">
+                        <div class="product-title">Відеокарта XFX Radeon RX 6700 Speedster SWFT 309 10240MB (RX-67XLKWFDV)</div>
+                    </a>
+                    <div class="product-description">
+                        Обсяг пам'яті: 10240 Мб<br>
+                        Тип пам'яті: GDDR6<br>
+                        Шина пам'яті: 160 біт<br>
+                        Частота відеопам'яті: 16000 МГц<br>
+                        Роз'єми для монітора:
+                        <ul>
+                            <li>1 x HDMI 2.1</li>
+                            <li>3 x DisplayPort 1.4</li>
+                        </ul>
+                        Продуктивність: 16628<br>
+                        Статус відеокарти: Нова
+                    </div>
+                        <div class="product-price">
+                            <h4>12449 ГРН</h4>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com/telemartua/" target="_blank"><i class="fab fa-facebook-square"></i></i></a></li>
+                <li><a href="https://www.instagram.com/telemart.ua/" target="_blank"><i class="fab fa-instagram"></i></a></i></li>
+                <li><a href="https://www.youtube.com/@telemart-980" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

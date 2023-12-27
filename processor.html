@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/87203807ea.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>Процесори</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Комп'ютерна Галактика</h1>
+            <nav>
+                <ul class="horizontal-menu">
+                    <li><a href="index.html">Головна</a></li>
+                    <li>
+                        <a href="">Товари</a>
+                        <ul>
+                            <li><a href="processor.html">Процесори</a></li>
+                            <li><a href="videocard.html">Відеокарти</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="pronas.html">Про нас</a></li>
+                    <li>
+                        <a href="#">Покупцям</a>
+                        <ul>
+                            <li><a href="oplata.html">Оплата</a></li>
+                            <li><a href="garantia.html">Гарантія</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <script src="snowfall.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(document).snowfall({image :"img/snow1.png", minSize: 10, maxSize:20});
+            $(document).snowfall({image :"img/snow2.png", minSize: 10, maxSize:20});
+            $(document).snowfall({image :"img/snow3.png", minSize: 10, maxSize:20});
+        });
+    </script>
+
+    <section class="main-content">
+        <div class="container">
+            <h1>Процесори</h1>
+
+            <div class="product-container">
+                <div class="product-card">
+                    <div class="gallery" id="product1">
+                        <img class="product-image active" src="proc1_1.png" alt="Процесор 1 - Фото 1">
+                        <img class="product-image" src="proc1_2.png" alt="Процесор 1 - Фото 2">
+                        <button class="prev" onclick="changeImage('product1', -1)">&#10094;</button>
+                        <button class="next" onclick="changeImage('product1', 1)">&#10095;</button>
+                    </div>
+                    <a href="processor1.html">
+                        <div class="product-title">Процесор Intel Core i5-13400F 2.5(4.6)GHz 20MB s1700 Box (BX8071513400F)</div>
+                    </a>
+                    <div class="product-description">
+                        Лінійка: Intel Core i5<br>
+                        Роз'єм процесора (Socket): LGA1700<br>
+                        Кількість ядер: 10 ядер<br>
+                        Інтегрована графіка: Без вбудованої графіки<br>
+                        Сумісність: Материнські плати LGA1700<br>
+                        Тактова частота: 2.5(4.6)GHz<br>
+                        Кеш: 20MB<br>
+                        Статус процесора: Новий
+                    </div>
+                    <div class="product-price">
+                        <h4>8 899 ГРН</h4>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="gallery" id="product2">
+                        <img class="product-image active" src="proc2_1.png" alt="Процесор 2 - Фото 1">
+                        <img class="product-image" src="proc2_2.jpg" alt="Процесор 2 - Фото 2">
+                        <button class="prev" onclick="changeImage('product2', -1)">&#10094;</button>
+                        <button class="next" onclick="changeImage('product2', 1)">&#10095;</button>
+                    </div>
+                    <a href="processor2.html">
+                        <div class="product-title">Процесор AMD Ryzen 7 5800X 3.8(4.7)GHz 32MB sAM4 Box (100-100000063WOF)</div>
+                    </a>
+                    <div class="product-description">
+                        Лінійка: AMD Ryzen 7<br>
+                        Роз'єм процесора (Socket): AM4<br>
+                        Кількість ядер: 8 ядер<br>
+                        Інтегрована графіка: Без вбудованої графіки<br>
+                        Сумісність: Материнські плати Socket AM4<br>
+                        Статус процесора: Новий
+                    </div>
+                    <div class="product-price">
+                        <h4>8 499 ГРН</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com/telemartua/" target="_blank"><i class="fab fa-facebook-square"></i></i></a></li>
+                <li><a href="https://www.instagram.com/telemart.ua/" target="_blank"><i class="fab fa-instagram"></i></a></i></li>
+                <li><a href="https://www.youtube.com/@telemart-980" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
